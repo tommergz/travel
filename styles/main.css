@@ -1,0 +1,276 @@
+ @font-face {
+    font-family: 'Turret Road';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../assets/fonts/TurretRoad-Medium.ttf);
+  }
+
+body {
+    display: block;
+    background: url(../assets/images/background.jpg);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+
+.description-title, .card-title, .description-text, .card-text {
+    font-family: 'Turret Road';
+}
+
+.choose-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.choose-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.choose-btn {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    border-radius: 12px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 10px;
+}
+
+.active-btn {
+    background: #0146FE;
+    color: #ffffff;
+}
+
+.passive-btn {
+    background: #F4F6FD;
+    color: #000000;
+}
+
+.choose-btn:hover {
+    cursor: pointer;
+    background-image:linear-gradient(to top, #eaedee 0%, #2ca0ca 100%);
+    background-image:-o-linear-gradient(to top, #eaedee 0%, #2ca0ca 100%);
+    background-image:-moz-linear-gradient(to top, #eaedee 0%, #2ca0ca 100%);
+    -image:-webkit-linear-gradient(to top, #eaedee 0%, #2ca0ca 100%);
+    background-image:-ms-linear-gradient(to top, #eaedee 0%, #2ca0ca 100%);
+}
+
+.choose-btn:active {
+    top:3px;
+    background-image:linear-gradient(to top, #829da7 0%, #7f9096 100%);
+    background-image:-o-linear-gradient(to top, #829da7 0%, #7f9096 100%);
+    background-image:-moz-linear-gradient(to top, #829da7 0%, #7f9096 100%);
+    -image:-webkit-linear-gradient(to top, #829da7 0%, #7f9096 100%);
+    background-image:-ms-linear-gradient(to top, #829da7 0%, #7f9096 100%);
+    -webkit-box-shadow:0 1px 0 #777f83 inset, 0 2px 0 0 #154353, 0 5px 3px #999;
+    -moz-box-shadow:0 1px 0 #777f83 inset, 0 2px 0 0 #154353, 0 5px 3px #999;
+    -o-box-shadow:0 1px 0 #777f83 inset, 0 2px 0 0 #154353, 0 5px 3px #999;
+    box-shadow:0 1px 0 #777f83 inset, 0 2px 0 0 #154353, 0 5px 3px #999;
+}
+
+.choose-btn span {
+    font-family: 'Turret Road';
+}
+
+.card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main-card {
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 80%;
+    height: 300px;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+    position: absolute;
+    z-index: 3;
+}
+
+.first-card-double {
+    margin: 0 auto 40px;
+    box-sizing: border-box;
+    width: 75%;
+    height: 300px;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+}
+
+.second-card-double {
+    margin: 0 auto 40px;
+    box-sizing: border-box;
+    width: 70%;
+    height: 300px;
+    background: #FFFFFF;
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+    border-radius: 32px;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    width: 90%;
+    max-height: 280px;
+    border-radius: 12px;
+}
+
+.common-page {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0px;
+    border: 2px solid black;
+    max-width: 1200px;
+}
+
+.common-page:first-child {
+    margin-top: 40px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 0 40px 40px;
+    width: 80%;
+}
+
+.description-title {
+    height: 60px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.05em;
+    color: #000000;
+    align-self: stretch;
+}
+
+.card-title {
+    height: 40px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #000000;
+    align-self: stretch;
+}
+
+.card-description {
+    padding: 0 20px;
+}
+
+.description-text {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* ==================================== MEDIA =================================== */
+
+@media (max-width: 1200px) {
+    .common-page {
+        flex-direction: column;
+        max-width: 700px;
+        margin: 40px auto 0px;
+    }
+
+    .skills-page {
+        margin-bottom: 40px;
+    }
+
+    .description-container {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto 40px;
+    }
+
+    .description {
+        margin: 0 auto;
+    }
+
+    .common-page h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .description-btn-container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .btn-cont {
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        max-width: 586px;
+    }
+    
+    .year {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .description-title {
+        font-size: 40px;
+    }
+    
+    .card-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card img {
+        display: none;
+    }
+
+    .choose-buttons {
+        flex-direction: column;
+    }
+
+    .choose-btn {
+        margin-bottom: 20px;
+    }
+}
